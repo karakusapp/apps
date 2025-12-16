@@ -7,6 +7,10 @@
       "description": "Streamline your localization workflow with AI-powered translations, smart project management, and native Xcode integration. Translate your apps to 130+ languages in minutes.",
       "image": "images/image1.png",
       "appStoreId": "coming-soon",
+      "legal": {
+        "termsUrl": "localex/terms.html",
+        "privacyUrl": "localex/privacy.html"
+      },
       "featured": true,
       "features": [
         {

@@ -107,6 +107,10 @@
       "description": "Professional portrait creator for newborn and baby photos with AI-powered editing and beautiful filters.",
       "image": "images/image2.png",
       "appStoreId": "6755613159",
+      "legal": {
+        "termsUrl": "newbornai/terms.html",
+        "privacyUrl": "newbornai/privacy.html"
+      },
       "featured": false,
       "tech": [
         "SwiftUI",
@@ -120,6 +124,10 @@
       "description": "Food scanner and calorie counter powered by AI. Track your nutrition effortlessly with smart food recognition.",
       "image": "images/image3.png",
       "appStoreId": "6746461348",
+      "legal": {
+        "termsUrl": "app-terms.html",
+        "privacyUrl": "app-privacy.html"
+      },
       "featured": false,
       "tech": [
         "SwiftUI",
@@ -133,6 +141,10 @@
       "description": "Land survey and property line measurement tool using GPS technology for accurate field mapping.",
       "image": "images/image4.png",
       "appStoreId": "6738019297",
+      "legal": {
+        "termsUrl": "app-terms.html",
+        "privacyUrl": "app-privacy.html"
+      },
       "featured": false,
       "tech": [
         "UIKit",
@@ -147,6 +159,10 @@
       "description": "Bark AI and dog whistle app to understand and communicate with your furry friend.",
       "image": "images/image5.png",
       "appStoreId": "6738327693",
+      "legal": {
+        "termsUrl": "app-terms.html",
+        "privacyUrl": "app-privacy.html"
+      },
       "featured": false,
       "tech": [
         "UIkit",
@@ -161,6 +177,10 @@
       "description": "Creative app for kids to style dolls, design colorful worlds, and create imaginative stories.",
       "image": "images/image6.png",
       "appStoreId": "6752912590",
+      "legal": {
+        "termsUrl": "app-terms.html",
+        "privacyUrl": "app-privacy.html"
+      },
       "featured": false,
       "tech": [
         "SwiftUI",
@@ -174,6 +194,10 @@
       "description": "Stress relief in just 5 minutes with guided meditation sessions designed for busy lifestyles.",
       "image": "images/image7.png",
       "appStoreId": "6744442585",
+      "legal": {
+        "termsUrl": "app-terms.html",
+        "privacyUrl": "app-privacy.html"
+      },
       "featured": false,
       "tech": [
         "SwiftUI",
@@ -187,6 +211,10 @@
       "description": "Organize shopping and save time with smart shopping lists and personalized recommendations.",
       "image": "images/image8.png",
       "appStoreId": "6452084449",
+      "legal": {
+        "termsUrl": "app-terms.html",
+        "privacyUrl": "app-privacy.html"
+      },
       "featured": false,
       "tech": [
         "UIKit",
@@ -200,6 +228,10 @@
       "description": "AI-powered cat breed identification. Snap a photo and instantly learn about any cat breed.",
       "image": "images/image9.png",
       "appStoreId": "6737813523",
+      "legal": {
+        "termsUrl": "app-terms.html",
+        "privacyUrl": "app-privacy.html"
+      },
       "featured": false,
       "tech": [
         "SwiftUI",

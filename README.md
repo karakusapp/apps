@@ -12,40 +12,30 @@ Modern, responsive portfolio website showcasing iOS development projects. All pr
 
 ## 🚀 Getting Started
 
-1. Replace placeholder images with your actual app screenshots:
-   - `localex-app.png` - LocaleX application screenshot
-   - `donatbi-app.png` - DonatBi application screenshot
-   - `aleefy-app.png` - Aleefy application screenshot
-   - `sparrowai-app.png` - SparrowAI application screenshot
-   - `quakesafe-app.png` - QuakeSafe application screenshot
-
-2. Simply open `index.html` in any modern web browser
+1. Clone or download the repository
+2. Open `index.html` in any modern web browser
+3. Or visit the live site: [karakusapp.github.io/apps](https://karakusapp.github.io/apps)
 
 ## 📁 File Structure
 
 ```
 LocaleX-Web/
-├── index.html          # Main HTML file
-├── style.css           # All styles and responsive design
-├── script.js           # Interactive features and animations
-├── README.md           # This file
-└── [app-images].png    # Your app screenshots (to be added)
+├── index.html           # Main HTML file
+├── style.css            # All styles and responsive design
+├── script.js            # Interactive features and animations
+├── projects.json        # Project data (edit this to update content)
+├── project-template.html # Dynamic project detail page
+├── localex/             # LocaleX legal pages
+│   ├── terms.html
+│   └── privacy.html
+├── newbornai/           # Newborn AI legal pages
+│   ├── terms.html
+│   └── privacy.html
+├── app-terms.html       # Generic app terms
+├── app-privacy.html     # Generic app privacy
+├── terms.html           # Website terms
+└── images/              # App screenshots
 ```
-
-## 🖼️ Image Requirements
-
-For best results, use images with these specifications:
-- **Format**: PNG or JPG
-- **Recommended size**: 1200x800px or similar ratio
-- **Featured project (LocaleX)**: Larger showcase image
-- **Other projects**: Square or landscape orientation
-
-### Quick Image Setup
-
-1. Take screenshots of your apps
-2. Rename them according to the filenames above
-3. Place them in the same directory as `index.html`
-4. Refresh the browser - images will appear automatically!
 
 ## 🎯 Features
 

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Project - Rıza Erdi Karakuş</title>
+    <meta name="description" id="pageDescription" content="">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail-container {
+            max-width: 1200px;
+            margin: 120px auto 80px;
+            padding: 0 24px;
+        }
+
+        .project-hero {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .project-hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .project-hero .tagline {
+            font-size: 24px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .project-hero-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(232, 116, 81, 0.3);
+        }
+
+        .project-hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-section {
+            margin-bottom: 64px;
+        }
+
+        .project-section h2 {
+            font-size: 32px;
+            color: var(--primary-orange);
+            margin-bottom: 24px;
+        }
+
+        .project-section h3 {
+            font-size: 24px;
+            color: var(--text-primary);
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        .project-section p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        .feature-card {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary-orange);
+            transform: translateY(-4px);
+        }
+
+        .feature-card h4 {
+            font-size: 20px;
+            color: var(--primary-orange);
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 24px 0;
+        }
+
+        .tech-badge {
+            padding: 12px 24px;
+            background: rgba(232, 116, 81, 0.15);
+            border: 1px solid rgba(232, 116, 81, 0.3);
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .project-cta {
+            text-align: center;
+            margin: 64px 0;
+            padding: 48px;
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 16px;
+        }
+
+        .project-cta h3 {
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-large {
+            padding: 16px 40px;
+            font-size: 18px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-large.primary {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .btn-large.primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(232, 116, 81, 0.4);
+        }
+
+        .btn-large.secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--dark-border);
+        }
+
+        .btn-large.secondary:hover {
+            border-color: var(--primary-orange);
+            background: rgba(232, 116, 81, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .project-detail-container {
+                margin: 100px auto 60px;
+            }
+
+            .project-hero h1 {
+                font-size: 36px;
+            }
+
+            .project-hero .tagline {
+                font-size: 18px;
+            }
+
+            .project-section h2 {
+                font-size: 28px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn-large {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-detail-container" id="projectContent">
+        <!-- Content will be loaded dynamically -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Rıza Erdi Karakuş. All rights reserved.</p>
+            <p>Built with passion for iOS development | <a href="terms.html"
+                    style="color: var(--primary-orange); text-decoration: none;">Terms & Conditions</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Get project ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Load project data
+        async function loadProjectDetails() {
+            try {
+                const response = await fetch('projects.json');
+                const data = await response.json();
+                const project = data.projects.find(p => p.id === projectId);
+
+                if (!project) {
+                    window.location.href = 'index.html';
+                    return;
+                }
+
+                // Update page title and meta
+                document.getElementById('pageTitle').textContent = `${project.title} - Rıza Erdi Karakuş`;
+                document.getElementById('pageDescription').setAttribute('content', project.description);
+
+                // Render project content
+                renderProjectDetails(project);
+
+            } catch (error) {
+                console.error('Error loading project:', error);
+                window.location.href = 'index.html';
+            }
+        }
+
+        function renderProjectDetails(project) {
+            const container = document.getElementById('projectContent');
+            const fullDesc = project.fullDescription || {};
+
+            // Use description as fallback intro
+            const intro = fullDesc.intro || project.description;
+
+            let html = `
+                <div class="project-hero">
+                    <h1>${project.title}</h1>
+                    <p class="tagline">${project.tagline}</p>
+                    <div class="project-hero-image">
+                        <img src="${project.image}" alt="${project.title}">
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Overview</h2>
+                    <p>${intro}</p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technology Stack</h2>
+                    <div class="tech-stack">
+                        ${project.tech.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+
+            // Key Features
+            if (fullDesc.keyFeatures) {
+                html += `
+                    <div class="project-section">
+                        <h2>Key Features</h2>
+                        <div class="features-grid">
+                            ${fullDesc.keyFeatures.map(feature => `
+                                <div class="feature-card">
+                                    <h4>${feature.title}</h4>
+                                    <p>${feature.description}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Pricing
+            if (fullDesc.pricing) {
+                html += `
+                    <div class="project-section">
+                        <h2>Pricing</h2>
+                        <div class="feature-card">
+                            <h4>${fullDesc.pricing.price}</h4>
+                            <ul style="list-style: none; padding: 0; margin-top: 16px;">
+                                ${fullDesc.pricing.features.map(f => `<li style="padding: 8px 0; color: var(--text-secondary);">✓ ${f}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Perfect For
+            if (fullDesc.perfectFor) {
+                html += `
+                    <div class="project-section">
+                        <h2>Perfect For</h2>
+                        <ul style="padding-left: 24px;">
+                            ${fullDesc.perfectFor.map(item => `<li style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 12px;">${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Technical Specs
+            if (fullDesc.technicalSpecs) {
+                html += `
+                    <div class="project-section">
+                        <h2>Technical Specifications</h2>
+                        <ul style="padding-left: 24px;">
+                            ${fullDesc.technicalSpecs.map(spec => `<li style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 12px;">${spec}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Quote
+            if (fullDesc.quote) {
+                html += `
+                    <div class="project-section">
+                        <blockquote style="border-left: 4px solid var(--primary-orange); padding: 24px; background: rgba(232, 116, 81, 0.05); font-style: italic; color: var(--text-secondary); font-size: 18px;">
+                            ${fullDesc.quote}
+                        </blockquote>
+                    </div>
+                `;
+            }
+
+            // Getting Started
+            if (fullDesc.gettingStarted) {
+                html += `
+                    <div class="project-section">
+                        <h2>Getting Started</h2>
+                        <ol style="padding-left: 24px;">
+                            ${fullDesc.gettingStarted.map(step => `<li style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 12px;">${step}</li>`).join('')}
+                        </ol>
+                    </div>
+                `;
+            }
+
+            // CTA with App Store button if available
+            let appStoreButton = '';
+            if (project.appStoreId && project.appStoreId !== 'coming-soon') {
+                appStoreButton = `
+                    <a href="https://apps.apple.com/app/id${project.appStoreId}" target="_blank" class="app-store-link">
+                        <img src="images/appStoreDownload.logo.svg" alt="Download on the App Store" style="height: 50px; width: auto;" />
+                    </a>
+                `;
+            }
+
+            html += `
+                <div class="project-cta">
+                    <h3>Ready to try ${project.title}?</h3>
+                    ${appStoreButton}
+                    <div class="cta-buttons" style="margin-top: ${appStoreButton ? '24px' : '0'};">
+                        <a href="index.html#contact" class="btn-large primary">Get In Touch</a>
+                        <a href="index.html#projects" class="btn-large secondary">View More Projects</a>
+                    </div>
+                </div>
+            `;
+
+            container.innerHTML = html;
+        }
+
+        // Load on page load
+        if (projectId) {
+            loadProjectDetails();
+        } else {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>

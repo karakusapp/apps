@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://karakuserdi.github.io/sitemap.xml
+
+# Disallow private directories if any
+Disallow: /.claude/
+Disallow: /.git/

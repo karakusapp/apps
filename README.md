@@ -152,7 +152,7 @@ Personal portfolio website - Feel free to use as inspiration!
 
 ## 👤 Contact
 
-- **Email**: karakusrizaerdi@gmail.com
+- **Email**: karakusapp@gmail.com
 - **GitHub**: [@karakuserdi](https://github.com/karakuserdi)
 - **LinkedIn**: [rizaerdikarakus](https://linkedin.com/in/rizaerdikarakus)
 

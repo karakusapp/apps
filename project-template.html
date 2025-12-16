@@ -390,6 +390,19 @@
                 `;
             }
 
+            // Legal Links
+            if (project.legal) {
+                html += `
+                    <div class="project-section">
+                        <h2>Legal</h2>
+                        <div class="cta-buttons" style="justify-content: flex-start;">
+                            <a href="${project.legal.termsUrl}" class="btn-large secondary">📜 Terms of Use</a>
+                            <a href="${project.legal.privacyUrl}" class="btn-large secondary">🔒 Privacy Policy</a>
+                        </div>
+                    </div>
+                `;
+            }
+
             // CTA with App Store button if available
             let appStoreButton = '';
             if (project.appStoreId && project.appStoreId !== 'coming-soon') {

@@ -1,114 +1,18 @@
 {
   "projects": [
     {
-      "id": "localex",
-      "title": "LocaleX",
-      "tagline": "Professional Localization Tool for iOS & macOS",
-      "description": "Streamline your localization workflow with AI-powered translations, smart project management, and native Xcode integration. Translate your apps to 130+ languages in minutes.",
-      "image": "images/image1.png",
-      "appStoreId": "coming-soon",
-      "legal": {
-        "termsUrl": "localex/terms.html",
-        "privacyUrl": "localex/privacy.html"
-      },
-      "featured": true,
-      "features": [
-        {
-          "icon": "🌍",
-          "text": "130+ Languages"
-        },
-        {
-          "icon": "🤖",
-          "text": "AI-Powered"
-        },
-        {
-          "icon": "⚡",
-          "text": "Blazing Fast"
-        },
-        {
-          "icon": "🔒",
-          "text": "Privacy First"
-        }
-      ],
-      "tech": [
-        "SwiftUI",
-        "AppKit",
-        "AI Integration"
-      ],
-      "fullDescription": {
-        "intro": "Localize your iOS and macOS apps in minutes, not hours. LocaleX is a powerful native macOS application that streamlines your localization workflow with AI-powered translations, smart project management, and an intuitive interface.",
-        "keyFeatures": [
-          {
-            "title": "🌍 Multi-Language Support",
-            "description": "Support 130+ languages with intelligent market recommendations. See potential reach metrics for each language and make data-driven decisions about which markets to target."
-          },
-          {
-            "title": "🤖 AI-Powered Translation",
-            "description": "Leverage Claude, ChatGPT, or Gemini to translate your entire app instantly. Context-aware translations that understand your app's purpose and maintain consistency across all strings."
-          },
-          {
-            "title": "📁 Native Xcode Integration",
-            "description": "Works seamlessly with .xcstrings and .strings files. Direct integration with your Xcode projects - no export/import needed. Changes sync automatically with your codebase."
-          },
-          {
-            "title": "🎯 Smart Translation Memory",
-            "description": "Never translate the same string twice. LocaleX learns from your translation history and suggests previously used translations for consistency."
-          },
-          {
-            "title": "📚 Custom Glossary",
-            "description": "Define your brand-specific terms, product names, and non-translatable words. Ensure consistent terminology across all languages."
-          },
-          {
-            "title": "💎 Quality Assurance",
-            "description": "Built-in proofreading helps catch context issues, tone inconsistencies, and translation errors before they reach production."
-          },
-          {
-            "title": "⚡ Blazing Fast Workflow",
-            "description": "Bulk translation operations, keyboard shortcuts, and an intuitive interface designed specifically for developers. Translate hundreds of keys in seconds."
-          },
-          {
-            "title": "🔒 Privacy First",
-            "description": "Use your own API keys - we never see your content or translations. All processing happens through your own AI provider accounts."
-          }
-        ],
-        "pricing": {
-          "price": "$49.99/year",
-          "features": [
-            "Unlimited projects",
-            "Unlimited translations",
-            "Use your own API key (OpenAI, Anthropic, or Google)",
-            "No hidden costs or usage limits"
-          ]
-        },
-        "perfectFor": [
-          "Solo iOS/macOS developers launching international apps",
-          "Development teams managing multiple localized projects",
-          "Apps targeting global markets",
-          "Anyone tired of manual translation management"
-        ],
-        "technicalSpecs": [
-          "Native macOS app",
-          "Support for Xcode .xcstrings and legacy .strings files",
-          "Real-time translation progress tracking",
-          "Project context awareness for better translations",
-          "Batch operations for maximum efficiency",
-          "Recent projects quick access"
-        ],
-        "quote": "Traditional localization is tedious and expensive. LocaleX makes it fast and affordable by letting you use AI with your own API keys. Set up your project once, and translate to 50+ languages in minutes.",
-        "gettingStarted": [
-          "Open your Xcode project in LocaleX",
-          "Add target languages from our curated list",
-          "Configure your AI provider API key",
-          "Hit \"Translate All\" and watch the magic happen",
-          "Review, refine, and export back to Xcode"
-        ]
-      }
-    },
-    {
       "id": "newborn-ai",
       "title": "Newborn AI",
       "tagline": "Baby Photo Studio",
       "description": "Professional portrait creator for newborn and baby photos with AI-powered editing and beautiful filters.",
+      "accent": "#FF7EB3",
+      "emoji": "👶",
+      "category": "Photo & Video",
+      "platform": "iOS",
+      "filters": [
+        "ai",
+        "photo"
+      ],
       "image": "images/image2.png",
       "appStoreId": "6755613159",
       "legal": {
@@ -126,11 +30,19 @@
       "title": "KCal",
       "tagline": "AI Calorie Tracker",
       "description": "Food scanner and calorie counter powered by AI. Track your nutrition effortlessly with smart food recognition.",
+      "accent": "#A3E635",
+      "emoji": "🥗",
+      "category": "Health & Fitness",
+      "platform": "iOS",
+      "filters": [
+        "ai",
+        "health"
+      ],
       "image": "images/image3.png",
       "appStoreId": "6746461348",
       "legal": {
-        "termsUrl": "app-terms.html",
-        "privacyUrl": "app-privacy.html"
+        "termsUrl": "kcal/terms.html",
+        "privacyUrl": "kcal/privacy.html"
       },
       "featured": false,
       "tech": [
@@ -143,17 +55,25 @@
       "title": "Area Measure",
       "tagline": "GPS Field Maps",
       "description": "Land survey and property line measurement tool using GPS technology for accurate field mapping.",
+      "accent": "#34D399",
+      "emoji": "📐",
+      "category": "Utilities",
+      "platform": "iOS & Android",
+      "filters": [
+        "tools"
+      ],
       "image": "images/image4.png",
       "appStoreId": "6738019297",
       "legal": {
-        "termsUrl": "app-terms.html",
-        "privacyUrl": "app-privacy.html"
+        "termsUrl": "area-measure/terms.html",
+        "privacyUrl": "area-measure/privacy.html"
       },
       "featured": false,
       "tech": [
-        "UIKit",
-        "CoreLocation",
-        "MapKit"
+        "SwiftUI",
+        "Jetpack Compose",
+        "MapKit",
+        "Google Maps"
       ]
     },
     {
@@ -161,85 +81,25 @@
       "title": "Dog Translator",
       "tagline": "Pet Talker",
       "description": "Bark AI and dog whistle app to understand and communicate with your furry friend.",
+      "accent": "#F59E0B",
+      "emoji": "🐶",
+      "category": "Entertainment",
+      "platform": "iOS",
+      "filters": [
+        "ai",
+        "fun"
+      ],
       "image": "images/image5.png",
       "appStoreId": "6738327693",
       "legal": {
-        "termsUrl": "app-terms.html",
-        "privacyUrl": "app-privacy.html"
+        "termsUrl": "dog-translator/terms.html",
+        "privacyUrl": "dog-translator/privacy.html"
       },
       "featured": false,
       "tech": [
         "UIkit",
         "AI",
         "Audio"
-      ]
-    },
-    {
-      "id": "dolli-world",
-      "title": "Dolli World",
-      "tagline": "Wardrobe Stylebook",
-      "description": "Creative app for kids to style dolls, design colorful worlds, and create imaginative stories.",
-      "image": "images/image6.png",
-      "appStoreId": "6752912590",
-      "legal": {
-        "termsUrl": "app-terms.html",
-        "privacyUrl": "app-privacy.html"
-      },
-      "featured": false,
-      "tech": [
-        "SwiftUI",
-        "Education"
-      ]
-    },
-    {
-      "id": "mindful",
-      "title": "Mindful",
-      "tagline": "5-Min Meditation",
-      "description": "Stress relief in just 5 minutes with guided meditation sessions designed for busy lifestyles.",
-      "image": "images/image7.png",
-      "appStoreId": "6744442585",
-      "legal": {
-        "termsUrl": "app-terms.html",
-        "privacyUrl": "app-privacy.html"
-      },
-      "featured": false,
-      "tech": [
-        "SwiftUI",
-        "Audio"
-      ]
-    },
-    {
-      "id": "shoplistgo",
-      "title": "ShopListGo",
-      "tagline": "For You",
-      "description": "Organize shopping and save time with smart shopping lists and personalized recommendations.",
-      "image": "images/image8.png",
-      "appStoreId": "6452084449",
-      "legal": {
-        "termsUrl": "app-terms.html",
-        "privacyUrl": "app-privacy.html"
-      },
-      "featured": false,
-      "tech": [
-        "UIKit",
-        "Productivity"
-      ]
-    },
-    {
-      "id": "cat-identifier",
-      "title": "Cat Identifier AI",
-      "tagline": "Easily identify any Cat",
-      "description": "AI-powered cat breed identification. Snap a photo and instantly learn about any cat breed.",
-      "image": "images/image9.png",
-      "appStoreId": "6737813523",
-      "legal": {
-        "termsUrl": "app-terms.html",
-        "privacyUrl": "app-privacy.html"
-      },
-      "featured": false,
-      "tech": [
-        "SwiftUI",
-        "AI"
       ]
     }
   ]
